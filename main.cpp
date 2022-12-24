@@ -23,7 +23,7 @@ int main() {
 	char* buff = new char[1024 * 1024];
 	std::cout << "Input the string for searching: ";
 	std::cin >> buff;
-	String substr(buff);
+	String str(buff);
 
 	String** s = new String * [n];	
 	for (int i = 0; i < n; i++) {
@@ -37,8 +37,7 @@ int main() {
 	out(s, n);
 	std::cout << '\n';
 
-	std::cout << "Repeats: " << findRepeats(s, n) << '\n';
-	std::cout << "Matches with '" << substr << "': " << search(s, n, substr) << '\n';
+	std::cout << "Repeats: " << findRepeats(s, n) << "; " << "Matches with '" << str << "': " << search(s, n, str) << '\n';
 	std::cout << '\n';
 
 	delete[] s;

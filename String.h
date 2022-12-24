@@ -1,8 +1,5 @@
 #pragma once
 
-#include <cstddef>
-#include <stdint.h>
-
 class String
 {
 public:
@@ -24,4 +21,3 @@ private:
 	std::size_t capacity;
 	char* pointer;
 };
-

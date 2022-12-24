@@ -62,6 +62,7 @@ bool String::operator== (String& str) {
 			if (pointer[i] != str.pointer[i]) { return false; }
 		}
 	}
+	else if (size != str.size) { return false; }
 	return true;
 }
 std::ostream& operator<< (std::ostream& out, String& str) {
